@@ -1,0 +1,123 @@
+/*------------------------------------------------------*/
+/******* CODE GéNEéAL ******/
+/*------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Allerta+Stencil);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+body {
+	margin: 0;
+	padding: 0;
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
+	font-family: 'Varela Round', sans-serif;
+	color: #e4dede;
+}
+
+/*------------------------------------------------------*/
+/******* HEADER ******/
+/*------------------------------------------------------*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #b3aaaa;
+}
+
+/*------------------------------------------------------*/
+/******* CAROUSSEL & ENCARS-TITRE ******/
+/*------------------------------------------------------*/
+
+.content-caroussel {
+    height: 500px;
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 20px 20px;
+    gap: 20px;
+}
+
+/***** CAROUSSEL *****/
+.caroussel {
+    width: 50%;
+}
+
+.carousel-control-next {
+    background-color: #000;
+    opacity: 0.1;
+    border-radius: 30px 0 0 30px;
+}
+
+.carousel-control-prev {
+    background-color: #000;
+    opacity: 0.1;
+    border-radius: 0 30px 30px 0;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: blue;
+}
+
+/***** ENCARS-TITRE *****/
+.encars-titre {
+    width: 50%;
+}
+
+.img-debre {
+	border-radius: 20px;
+	width: 120px;
+}
+
+.heading-icon{
+	background-color: #3bdcee;
+	border-radius: 20px;
+	padding: 20px 21px 16px;
+	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.11);
+}
+.main-text {
+    color: #332c2c;
+    font-size: 2rem;
+}
+
+.titreh3 {
+    color: #645c5c;
+    font-size: .8rem;
+}
+
+p {
+    color: #332c2c;
+    font-size: 1.2rem;
+}
