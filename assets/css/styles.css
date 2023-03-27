@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .heading-icon{
-	background-color: #3bdcee;
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
 	border-radius: 20px;
 	padding: 20px 21px 16px;
 	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.11);
