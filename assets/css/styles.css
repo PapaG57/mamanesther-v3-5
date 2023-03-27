@@ -26,6 +26,7 @@ header {
     width: 100%;
     background: linear-gradient(to right, #0ebcf1, #cceff0);
     padding: 10px 0;
+    z-index: 10;
 }
 
 .logo-asso {
@@ -52,7 +53,7 @@ ul {
     background: linear-gradient(to right, #0ebcf1, #cceff0);
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
     height: 70px;
-    width: 1200px;
+    width: 100%;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -105,19 +106,19 @@ nav ul li a:hover {
 }
 
 .carousel-control-next {
-    background-color: #000;
-    opacity: 0.1;
+    background-color: #c2bfbf;
+    opacity: 0.2;
     border-radius: 30px 0 0 30px;
 }
 
 .carousel-control-prev {
-    background-color: #000;
+    background-color: #c2bfbf;
     opacity: 0.1;
     border-radius: 0 30px 30px 0;
 }
 
 .carousel .carousel-indicators .active {
-    background-color: blue;
+    background-color: #000;
 }
 
 /***** ENCARS-TITRE *****/
@@ -153,4 +154,36 @@ nav ul li a:hover {
 p {
     color: #332c2c;
     font-size: 1.2rem;
+}
+
+/*------------------------------------------------------*/
+/******* TéMOIGNAGES ******/
+/*------------------------------------------------------*/
+
+/***** BANDEAU TITRE NOUVELLES *****/
+
+.temoignage {
+    height: 1000px;
+    margin-top: 50px
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 2rem;
+	font-weight: bold;
+    background-color: #fff;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    color: #0ebcf1;
+    height: 100px;
+	padding: 8px;
+}
+
+.all-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
 }
