@@ -31,6 +31,30 @@ header {
 .logo-asso {
     width: 60px;
     height: 60px;
+    margin-right: 50px;
+}
+
+.logo-asso:hover {
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    height: 70px;
+    width: 1200px;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -71,7 +95,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px 20px 20px;
+    padding: 150px 20px 20px 20px;
     gap: 20px;
 }
 
@@ -98,19 +122,23 @@ nav ul li a:hover {
 
 /***** ENCARS-TITRE *****/
 .encars-titre {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 50%;
 }
 
 .img-debre {
-	border-radius: 20px;
+	border-radius: 5px;
 	width: 120px;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 .heading-icon{
     background: linear-gradient(to right, #0ebcf1, #cceff0);
-	border-radius: 20px;
+	border-radius: 5px;
 	padding: 20px 21px 16px;
-	box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.11);
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 .main-text {
     color: #332c2c;
