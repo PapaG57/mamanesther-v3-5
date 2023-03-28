@@ -12,7 +12,6 @@ body {
 	padding: 0;
     background: linear-gradient(to right, #0ebcf1, #cceff0);
 	font-family: 'Varela Round', sans-serif;
-	color: #e4dede;
 }
 
 /*------------------------------------------------------*/
@@ -135,12 +134,6 @@ nav ul li a:hover {
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
-.heading-icon{
-    background: linear-gradient(to right, #0ebcf1, #cceff0);
-	border-radius: 5px;
-	padding: 20px 21px 16px;
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-}
 .main-text {
     color: #332c2c;
     font-size: 2rem;
@@ -161,7 +154,6 @@ p {
 /*------------------------------------------------------*/
 
 /***** BANDEAU TITRE NOUVELLES *****/
-
 .news {
     height: 1000px;
     margin-top: 50px
@@ -181,6 +173,7 @@ p {
 	padding: 8px;
 }
 
+/***** SECTION CARTES *****/
 .all-card {
     display: flex;
     justify-content: space-evenly;
@@ -188,13 +181,86 @@ p {
     margin-top: 20px;
 }
 
-.card-news {
-    width: 400px;
+.content-card {
+    width: 480px;
     height: 600px;
-    background-color: #cceff0;
 }
 
-.card-imgage {
-    width: 380px;
+/***** IMAGES CARTE *****/
+.card-image {
+    display: flex;
+    justify-content: center;
     height: 300px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px 5px 0 0;
+}
+
+.img-news {
+    width: auto;
+    height: 280px;
+}
+
+/***** NEW CARTE *****/
+.card-news {
+    height: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+/***** TITRE CARTE *****/
+.card-news h4 {
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 22px !important;
+}
+
+/***** TEXTE CARTE *****/
+.card-news p {
+    padding: 22px 0 27px;
+}
+
+/***** BOUTON CARTE *****/
+.card-news .button-card {
+    border: 1px solid rgba(47, 116, 116, 1);
+    background: rgba(47, 116, 116, 1);
+    padding: 20px 22px;
+    line-height: 10px;
+    color: white;
+    text-transform: uppercase;
+    float: left;
+    cursor: pointer;
+}
+
+.button-card:hover {
+	background: none;
+	border: 1px solid #2f7474;
+	color: #2f7474;
+}
+
+/***** DATE CARTE *****/
+.date {
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.date .fa {
+	font-size: 20px;
+	line-height: 30px;
+	position: relative;
+	float: left;
+	padding-left: 30px;
+    color: #332c2c;
+}
+
+.date span {
+	font-size: 14px;
+	line-height: 30px;
+	color: #bac4ca;
+	position: relative;
+	float: left;
+	padding-left: 8px;
 }
