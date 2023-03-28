@@ -88,6 +88,10 @@ nav ul li a:hover {
 /*------------------------------------------------------*/
 /******* CAROUSSEL & ENCARS-TITRE ******/
 /*------------------------------------------------------*/
+.caroussel-titre {
+    height: 550px;
+}
+
 
 .content-caroussel {
     height: 500px;
@@ -150,13 +154,12 @@ p {
 }
 
 /*------------------------------------------------------*/
-/******* TéMOIGNAGES ******/
+/******* NOUVELLES ******/
 /*------------------------------------------------------*/
 
 /***** BANDEAU TITRE NOUVELLES *****/
 .news {
-    height: 1000px;
-    margin-top: 50px
+    height: 720px;
 }
 
 .header-text {
@@ -264,3 +267,14 @@ p {
 	float: left;
 	padding-left: 8px;
 }
+
+/*------------------------------------------------------*/
+/******* TéMOIGNAGES ******/
+/*------------------------------------------------------*/
+
+/***** BANDEAU TITRE TéMOIGNAGES *****/
+.temoignages {
+    height: 800px;
+    margin-top: 50px
+}
+
