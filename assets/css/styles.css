@@ -157,11 +157,11 @@ p {
 /******* NOUVELLES ******/
 /*------------------------------------------------------*/
 
-/***** BANDEAU TITRE NOUVELLES *****/
 .news {
     height: 720px;
 }
 
+/***** BANDEAU TITRE NOUVELLES  ET TéMOIGNAGES *****/
 .header-text {
     display: flex;
     justify-content: center;
@@ -176,12 +176,12 @@ p {
 	padding: 8px;
 }
 
-/***** SECTION CARTES *****/
+/***** SECTION CARTES NEWS *****/
 .all-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .content-card {
@@ -189,7 +189,7 @@ p {
     height: 600px;
 }
 
-/***** IMAGES CARTE *****/
+/***** IMAGES CARTE NEWS *****/
 .card-image {
     display: flex;
     justify-content: center;
@@ -204,7 +204,7 @@ p {
     height: 280px;
 }
 
-/***** NEW CARTE *****/
+/***** CONTENT TEXTE CARTE NEWS *****/
 .card-news {
     height: 300px;
     background-color: #fff;
@@ -272,9 +272,39 @@ p {
 /******* TéMOIGNAGES ******/
 /*------------------------------------------------------*/
 
-/***** BANDEAU TITRE TéMOIGNAGES *****/
 .temoignages {
     height: 800px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
+/***** SECTION CARTES TéMOIGNAGES *****/
+.all-temoignages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/***** IMAGES CARTE TéMOIGNAGES *****/
+.content-card-temoignages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.card-image-temoignages {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px 0 0 5px;
+}
+
+.img-temoignages {
+    width: 300px;
+    height: 180px;
+}
+
+.card-temoignages {
+    background-color: #fff;
+}
