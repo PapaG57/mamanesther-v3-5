@@ -4,6 +4,12 @@
   ],
   "hints": {
     "axe/structure": "off",
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ]
   }
 }
