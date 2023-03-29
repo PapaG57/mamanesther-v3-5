@@ -189,7 +189,7 @@ p {
     height: 600px;
 }
 
-/***** IMAGES CARTE NEWS *****/
+/***** IMAGES CARTES NEWS *****/
 .card-image {
     display: flex;
     justify-content: center;
@@ -204,7 +204,7 @@ p {
     height: 280px;
 }
 
-/***** CONTENT TEXTE CARTE NEWS *****/
+/***** CONTENT TEXTE CARTES NEWS *****/
 .card-news {
     height: 300px;
     background-color: #fff;
@@ -212,19 +212,19 @@ p {
     border-radius: 0 0 5px 5px;
 }
 
-/***** TITRE CARTE *****/
+/***** TITRE CARTES NEWS *****/
 .card-news h4 {
     font-weight: bold;
     padding-top: 10px;
     font-size: 22px !important;
 }
 
-/***** TEXTE CARTE *****/
+/***** TEXTE CARTES NEWS *****/
 .card-news p {
     padding: 22px 0 27px;
 }
 
-/***** BOUTON CARTE *****/
+/***** BOUTON CARTES NEWS *****/
 .card-news .button-card {
     border: 1px solid rgba(47, 116, 116, 1);
     background: rgba(47, 116, 116, 1);
@@ -242,7 +242,7 @@ p {
 	color: #2f7474;
 }
 
-/***** DATE CARTE *****/
+/***** DATE CARTES *****/
 .date {
 	position: relative;
 	float: left;
@@ -280,20 +280,21 @@ p {
 /***** SECTION CARTES TéMOIGNAGES *****/
 .all-temoignages {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    gap: 20px;
 }
 
-/***** IMAGES CARTE TéMOIGNAGES *****/
+/***** CONTENT CARTES TéMOIGNAGES *****/
 .content-card-temoignages {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     height: 200px;
     margin-left: 20px;
 }
 
+/***** IMAGES CARTES TéMOIGNAGES *****/
 .card-image-temoignages {
     padding: 10px;
     background-color: #e0e0e0;
@@ -305,6 +306,22 @@ p {
     height: 180px;
 }
 
+/***** CONTENT TEXTE CARTES TéMOIGNAGES *****/
 .card-temoignages {
     background-color: #fff;
+    border-radius: 0  5px 5px 0 ;
+    width: 600px;
+    padding: 20px;
+}
+
+/***** TITRE CARTES TéMOIGNAGES *****/
+.card-news h4 {
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 22px !important;
+}
+
+/***** TEXTE CARTES TéMOIGNAGES *****/
+.card-news p {
+    padding: 22px 0 27px;
 }
