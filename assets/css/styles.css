@@ -37,6 +37,9 @@ header {
 .logo-asso:hover {
     transform: scale(1.2);
     transition-duration: .5s;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+	background-color: #fff;
+	border-radius: 5px;
 }
 
 a {
@@ -228,8 +231,8 @@ nav ul li a:hover {
 
 /***** BOUTON CARTES NEWS *****/
 .card-news .button-card {
-    border: 1px solid rgba(47, 116, 116, 1);
-    background: rgba(47, 116, 116, 1);
+    border: 1px solid #2f7474;
+    background: #2f7474;
     padding: 20px 22px;
     line-height: 10px;
     color: white;
@@ -275,7 +278,7 @@ nav ul li a:hover {
 /*------------------------------------------------------*/
 
 .temoignages {
-    height: 650px;
+    height: 700px;
     margin-top: 60px;
 }
 
@@ -290,6 +293,11 @@ nav ul li a:hover {
 	margin-top: 40px;
 	margin-bottom: 40px;
 	text-align: center;
+}
+
+.text-temoignages h4 {
+	color: #0ebcf1;
+	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 /******* CAROUSSEL TéMOIGNAGES ******/
@@ -596,6 +604,6 @@ a:focus {
 
 .chiffres {
     height: 800px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
