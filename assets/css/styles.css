@@ -277,11 +277,7 @@ p {
 
 /***** SECTION CARTES TéMOIGNAGES *****/
 .all-temoignages {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
     margin-top: 40px;
-    gap: 20px;
 }
 
 /***** CONTENT CARTES TéMOIGNAGES *****/
@@ -324,17 +320,14 @@ p {
     padding: 22px 0 27px;
 }
 
-/*------------------------------------------------------*/
 /******* CAROUSSEL TéMOIGNAGES ******/
-/*------------------------------------------------------*/
 
-/**
+/*
 	Juizy Slideshow
 	@author: Geoffrey Crofte
 	@date: 2011-12-07
 	@from: self work http://creativejuiz.fr/trytotry
 	@license: CreativeCommons (BY)
-	
 	
 	************* Changelog *************
 	
@@ -346,7 +339,6 @@ p {
 	
 	** v.1.0.0 - 2011-12-07
 	- First version
-	
 */
 
 figure { 
@@ -360,10 +352,6 @@ a:hover,
 a:focus {
 	border-bottom: 1px dashed #bc9d88;
 }
-.sread {
-	position: absolute;
-	left:-9999px;
-}
 
 .center {
 	text-align: center;
@@ -371,7 +359,7 @@ a:focus {
 
 #slideshow {
 	position: relative;
-	width: 620px;
+	width: 644px;
 	height: 310px;
 	border: 1px solid #ddd;
 	margin: 0 auto 2em;
@@ -392,13 +380,7 @@ a:focus {
 	height: 20px;
 	content: " ";
 	background: rgba(0,0,0,0.1);
-	
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
-	
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
-	-moz-box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
 	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
 	
 	z-index: -10;
@@ -406,12 +388,12 @@ a:focus {
 
 #slideshow:before {
 	left:0;
-	-webkit-transform: rotate(-4deg);
+	transform: rotate(-4deg);
 }
 
 #slideshow:after {
 	right:0;
-	-webkit-transform: rotate(4deg);
+	transform: rotate(4deg);
 }
 
 #slideshow .commands {
@@ -424,19 +406,9 @@ a:focus {
 	color: #aaa;
 	text-decoration:none;
 	background-color: #eee;
-	background-image: -webkit-linear-gradient(#fff,#ddd);
-	background-image: -moz-linear-gradient(#fff,#ddd);
-	background-image: -ms-linear-gradient(#fff,#ddd);
-	background-image: -o-linear-gradient(#fff,#ddd);
 	background-image: linear-gradient(#fff,#ddd);
 	text-shadow: 0 0 1px #aaa;
-	
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 	border-radius: 50%;
-	
-	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-	-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
@@ -452,17 +424,8 @@ a:focus {
 	text-align:center;
 	text-shadow: 0 0 0;
 	opacity: 0;
-	
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
 	border-radius: 12px;
-	
-	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-	
-	-webkit-transition: opacity 0.7s, bottom 0.7s;
-	-moz-transition: opacity 0.7s, bottom 0.7s;
 	transition: opacity 0.7s, bottom 0.7s;
 }
 
@@ -476,9 +439,6 @@ a:focus {
 	border-right: 5px solid transparent;
 	z-index:100;
 	opacity: 0;
-	
-	-webkit-transition: opacity 0.7s, bottom 0.7s;
-	-moz-transition: opacity 0.7s, bottom 0.7s;
 	transition: opacity 0.7s, bottom 0.7s;
 }
 
@@ -494,18 +454,10 @@ a:focus {
 
 #slideshow .commands:focus { 
 	outline: 0;
-	-webkit-transform: translate(1px, 2px);
-	-moz-transform: translate(1px, 2px);
-	-ms-transform: translate(1px, 2px);
-	-o-transform: translate(1px, 2px);
 	transform: translate(1px, 2px);
 }
 
 #slideshow .commands:active {
-	-webkit-transform: translate(0, 1px);
-	-moz-transform: translate(0, 1px);
-	-ms-transform: translate(0, 1px);
-	-o-transform: translate(0, 1px);
 	transform: translate(0, 1px);
 }
 
@@ -533,7 +485,7 @@ a:focus {
 
 #slideshow .container {
 	position:relative;
-	width: 640px;
+	width: 644px;
 	height: 310px;
 	overflow: hidden;
 }
@@ -548,20 +500,6 @@ a:focus {
 	height: 1px;
 }
 
-@-webkit-keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
-}
-
-@-moz-keyframes slider {
-	0%, 20%, 100%	{ left: 0 }
-	25%, 45%		{ left: -100% }
-	50%, 70%		{ left: -200% }
-	75%, 95%		{ left: -300% }
-}
-
 @keyframes slider {
 	0%, 20%, 100%	{ left: 0 }
 	25%, 45%		{ left: -100% }
@@ -574,21 +512,14 @@ a:focus {
 	left:0; top:0;
 	width: 400%;
 	height: 310px;
-	
-	-webkit-animation: slider 32s infinite;
-	-moz-animation: slider 32s infinite;
 	animation: slider 32s infinite;
 }
 
 .sl_i:target ~ #slideshow .slider {
-	-webkit-transition: left 1s;
-	-moz-transition: left 1s;
 	transition: left 1s;
 }
 
 .sl_command:target ~ #slideshow .slider {
-	-webkit-transition: opacity 1s;
-	-moz-transition: opacity 1s;
 	transition: opacity 1s;
 }
 
@@ -601,24 +532,12 @@ a:focus {
 }
 
 .sl_i:target ~ #slideshow .c_slider {
-	-webkit-transition: background 1s;
-	-moz-transition: background 1s;
 	transition: background 1s;
 }
 
 #slideshow figure {
 	position:relative;
 	padding:0; margin:0;
-}
-
-@-webkit-keyframes figurer {
-	0%, 25%, 50%, 75%, 100%						{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ -webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
-}
-
-@-moz-keyframes figurer {
-	0%, 25%, 50%, 75%, 100%						{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
 }
 
 @keyframes figurer {
@@ -635,21 +554,9 @@ a:focus {
 	-webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
 	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
-	
-	-webkit-animation: figurer 32s infinite;
-	-moz-animation: figurer 32s infinite;
 	animation: figurer 32s infinite;
 }
 
-@-webkit-keyframes figcaptionner {
-	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
-}
-
-@-moz-keyframes figcaptionner {
-	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
-}
 
 @keyframes figcaptionner {
 	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
@@ -658,7 +565,7 @@ a:focus {
 
 #slideshow figcaption {
 	position:absolute;
-	padding: 20px 20px; margin:0;
+	padding: 0 20px; margin:0;
 	left:0; right:0; bottom: 0px;
 	text-align:center;
 	letter-spacing: 0.05em;
@@ -672,66 +579,9 @@ a:focus {
 	animation: figcaptionner 32s infinite;
 }
 
-@-webkit-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-
-@-moz-keyframes timeliner {
-	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
-	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-
 @keyframes timeliner {
 	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
 	20%, 45%, 70%, 90%		{ width: 640px;	}
-}
-
-
-@-moz-keyframes dotser {
-	0%, 100% 	{ opacity: 1; left: 0; 		}
-	
-	20%			{ opacity: 1; left: 0;		}
-	22%			{ opacity: 0; left: 0;		}
-	23%			{ opacity: 0; left: 18px;	}
-	25%			{ opacity: 1; left: 18px;	}
-	
-	45%			{ opacity: 1; left: 18px;	}
-	47%			{ opacity: 0; left: 18px;	}
-	48%			{ opacity: 0; left: 36px;	}
-	50%			{ opacity: 1; left: 36px;	}
-	
-	70%			{ opacity: 1; left: 36px;	}
-	72%			{ opacity: 0; left: 36px;	}
-	73%			{ opacity: 0; left: 54px;	}
-	75%			{ opacity: 1; left: 54px;	}
-	
-	95%			{ opacity: 1; left: 54px;	}
-	97%			{ opacity: 0; left: 54px;	}
-	98%			{ opacity: 0; left: 0;	}
-}
-
-@-webkit-keyframes dotser {
-	0%, 100% 	{ opacity: 1; left: 0; 		}
-	
-	20%			{ opacity: 1; left: 0;		}
-	22%			{ opacity: 0; left: 0;		}
-	23%			{ opacity: 0; left: 18px;	}
-	25%			{ opacity: 1; left: 18px;	}
-	
-	45%			{ opacity: 1; left: 18px;	}
-	47%			{ opacity: 0; left: 18px;	}
-	48%			{ opacity: 0; left: 36px;	}
-	50%			{ opacity: 1; left: 36px;	}
-	
-	70%			{ opacity: 1; left: 36px;	}
-	72%			{ opacity: 0; left: 36px;	}
-	73%			{ opacity: 0; left: 54px;	}
-	75%			{ opacity: 1; left: 54px;	}
-	
-	95%			{ opacity: 1; left: 54px;	}
-	97%			{ opacity: 0; left: 54px;	}
-	98%			{ opacity: 0; left: 0;	}
 }
 
 @keyframes dotser {
@@ -759,24 +609,6 @@ a:focus {
 
 /* EXPLANATIONS */
 
-@-webkit-keyframes downloader {
-	0% { top:5px; }
-	45% { top:60px; }
-	49% { opacity: 0; }
-	50% { top: -60px; }
-	51% { opacity: 1; }
-	100% { top:5px; color: #cbbfb5; text-shadow: 1px 1px #777; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
-}
-
-@-moz-keyframes downloader {
-	0% { top:5px; }
-	45% { top:60px; }
-	49% { opacity: 0; }
-	50% { top: -60px; }
-	51% { opacity: 1; }
-	100% { top:5px; color: #cbbfb5; text-shadow: 1px 1px #777; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
-}
-
 @keyframes downloader {
 	0% { top:5px; }
 	45% { top:60px; }
@@ -785,3 +617,8 @@ a:focus {
 	51% { opacity: 1; }
 	100% { top:5px; color: #cbbfb5; text-shadow: 1px 1px #777; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
 }
+
+/*------------------------------------------------------*/
+/******* CHIFFRES ******/
+/*------------------------------------------------------*/
+
