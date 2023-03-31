@@ -362,14 +362,14 @@ a:focus {
 
 #slideshow {
 	position: relative;
-	width: 644px;
+	width: 642px;
 	height: 310px;
 	border: 1px solid #ddd;
 	margin: 0 auto 2em;
 	background: #FFF;
 	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
 	border-radius: 2px 2px 2px 2px;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	box-shadow: 0 0 3px #00000033;
 }
 
 /* avanced box-shadow : http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow */
@@ -382,9 +382,9 @@ a:focus {
 	width: 50%;
 	height: 20px;
 	content: " ";
-	background: rgba(0,0,0,0.1);
+	background: #0000001a;
 	border-radius: 50%;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+	box-shadow: 0 0 3px #00000066, 0 20px 10px #000000b3;
 	
 	z-index: -10;
 }
@@ -412,7 +412,7 @@ a:focus {
 	background-image: linear-gradient(#fff,#ddd);
 	text-shadow: 0 0 1px #aaa;
 	border-radius: 50%;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 2px #00000033;
 }
 
 #slideshow .commands:after {
@@ -422,13 +422,13 @@ a:focus {
 	width: 50px;
 	padding: 12px;
 	background: #fff;
-	font-family: Georgia, Times, serif;
+	font-family: 'Valera Round' serif;
 	font-size: 14px;
 	text-align:center;
 	text-shadow: 0 0 0;
 	opacity: 0;
 	border-radius: 12px;
-	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 4px #00000066;
 	transition: opacity 0.7s, bottom 0.7s;
 }
 
@@ -488,7 +488,7 @@ a:focus {
 
 #slideshow .container {
 	position:relative;
-	width: 644px;
+	width: 642px;
 	height: 310px;
 	overflow: hidden;
 }
@@ -531,7 +531,7 @@ a:focus {
 	left:0; top:0;
 	width: 400%;
 	height: 310px;
-	background: url(img/dummy-640x310-1.jpg) 0 0 no-repeat, url(img/dummy-640x310-2.jpg) 640px 0 no-repeat, url(img/dummy-640x310-3.jpg) 1280px 0 no-repeat, url(img/dummy-640x310-4.jpg) 1920px 0 no-repeat;
+	background: url(../img/caroussel/florent-gerard.webp) 0 0 no-repeat, url(../img/caroussel/esther-gerard.webp) 640px 0 no-repeat, url(../img/caroussel/paul-martin.webp) 1280px 0 no-repeat, url(../img/caroussel/pierre-dupont.webp) 1920px 0 no-repeat;
 }
 
 .sl_i:target ~ #slideshow .c_slider {
@@ -544,8 +544,8 @@ a:focus {
 }
 
 @keyframes figurer {
-	0%, 25%, 50%, 75%, 100%						{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0) inset; box-shadow: 0 0 65px rgba(0,0,0, 0) inset;	}
-	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ -moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset; }
+	0%, 25%, 50%, 75%, 100%						{ -moz-box-shadow: 0 0 65px #00000000 inset; box-shadow: 0 0 65px #00000000 inset;	}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ -moz-box-shadow: 0 0 65px #00000080 inset;	box-shadow: 0 0 65px #00000080 inset; }
 }
 
 #slideshow figure:after {
@@ -554,9 +554,9 @@ a:focus {
 	content: " ";
 	top:0; left:0;
 	width: 100%; height: 100%;
-	-webkit-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
-	-moz-box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
-	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+	-webkit-box-shadow: 0 0 65px #00000080 inset;
+	-moz-box-shadow: 0 0 65px #00000080 inset;
+	box-shadow: 0 0 65px #00000080 inset;
 	animation: figurer 32s infinite;
 }
 
@@ -574,11 +574,11 @@ a:focus {
 	letter-spacing: 0.05em;
 	word-spacing: 0.05em;
 	font-family: Georgia, Times, serif;
-	background: #000;
-	background: rgba(255,255,255,0.7);
-	border-top: 1px solid rgb(225,225,225);
+	background: hsl(0, 0%, 0%);
+	background: #ffffffb3;
+	border-top: 1px solid #e1e1e1;
 	color: #555;
-	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+	text-shadow: -1px -1px 0 #ffffff4d;
 	animation: figcaptionner 32s infinite;
 }
 
@@ -618,7 +618,7 @@ a:focus {
 	49% { opacity: 0; }
 	50% { top: -60px; }
 	51% { opacity: 1; }
-	100% { top:5px; color: #cbbfb5; text-shadow: 1px 1px #777; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
+	100% { top:5px; color: #cbbfb5; text-shadow: 1px 1px #777; background: #ffffff1a; border-color: #ffffff80; }
 }
 
 /*------------------------------------------------------*/
@@ -633,7 +633,7 @@ a:focus {
 .all-card-chiffres {
 	display: flex;
 	flex-direction: column;
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 .all-card-line-1, .all-card-line-2 {
@@ -647,10 +647,13 @@ a:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
+	padding: 10px;
 	width: 400px;
 	height: 80px;
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 50px;
+	border: solid 1px #0ebcf1;
 	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
@@ -659,11 +662,6 @@ a:focus {
 	display: inline-block;
 	height: 70px;
 	margin: 0 20px;
-}
-
-.card-chiffres-text {
-	padding-left: 50px;
-	font-size: 1.2rem;
 }
 
 .card-chiffres-chiffres {
