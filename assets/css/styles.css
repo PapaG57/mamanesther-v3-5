@@ -714,6 +714,11 @@ a {
 	font-family: "Poppins", sans-serif;
 }
 
+.img-logo-footer {
+	width: 80px;
+	height: 30px;
+}
+
 .social-icones {
 	position: relative;
 	display: flex;
