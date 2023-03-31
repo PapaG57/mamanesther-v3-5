@@ -61,10 +61,6 @@ header {
 	border-radius: 5px;
 }
 
-a {
-    text-decoration: none;
-}
-
 nav {
     display: flex;
     justify-content: center;
@@ -92,7 +88,6 @@ nav ul li {
 nav ul li a {
     display: block;
     color: #474141;
-    text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 5px 10px;
@@ -312,7 +307,7 @@ nav ul li a:hover {
 	border: solid 2px #ff0000;
 	padding: 20px;
 	margin: auto;
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-bottom: 40px;
 	text-align: center;
 	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
@@ -347,13 +342,9 @@ nav ul li a:hover {
 figure { 
 	display: inline-block; 
 }
+
 a {
 	text-decoration: none;
-}
-
-a:hover,
-a:focus {
-	border-bottom: 1px dashed #bc9d88;
 }
 
 .center {
@@ -625,42 +616,69 @@ a:focus {
 /******* CHIFFRES ******/
 /*------------------------------------------------------*/
 
-.chiffres {
+.section-chiffres {
     height: 800px;
     margin-top: 120px;
 }
 
-.all-card-chiffres {
+/******* ALLIGNEMENT CARTES CHIFFRES ******/
+.all-line {
 	display: flex;
 	flex-direction: column;
 	margin-top: 60px;
 }
 
-.all-card-line-1, .all-card-line-2 {
+.all-card-line-1,
+.all-card-line-2,
+.all-card-line-3 {
 	display: flex;
 	justify-content: center;
 	gap: 40px;
 	margin-top: 40px;
 }
 
-.card-chiffres {
+/******* CARTES CHIFFRES ******/
+.icone-chiffres {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	gap: 10px;
-	padding: 10px;
+	justify-content: center;
+	background-color: #fff;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+	color: #0ebcf1;
+	border-radius: 100%;
+	border: solid 1px #0ebcf1;
+	height: 3rem;
+	width: 3rem;
+	min-height: 3.5rem;
+	min-width: 3.5rem;
+	margin: -20px;
+}
+
+.card-aligne-chiffres {
+	display: flex;
+	align-items: center;
+	margin-right: 2rem;
+	border: 2px solid #0ebcf1;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
 	width: 400px;
 	height: 80px;
+	cursor: pointer;
+	transition-duration: 0.6s;
 	background-color: #fff;
-	border-radius: 50px;
-	border: solid 1px #0ebcf1;
 	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.card-chiffres-text {
+	padding-left: 30px;
+	color: #474141;
+	font-weight: 900;
 }
 
 .vertical-line {
 	border-left: 2px solid #0ebcf1;
 	display: inline-block;
-	height: 70px;
+	height: 50px;
 	margin: 0 20px;
 }
 
@@ -670,37 +688,3 @@ a:focus {
 	color: #0ebcf1;
 }
 
-
-.Aaligne-chiffres {
-	display: flex;
-	align-items: center;
-	margin-right: 2rem;
-	border: 3px solid #f2f2f2;
-	border-radius: 2rem;
-	margin-bottom: 1rem;
-	cursor: pointer;
-	transition-duration: 0.6s;
-}
-
-/* .aligne-chiffres i {
-	color: #0065fc;
-} */
-
-/* .aligne-chiffres:hover {
-	transform: scale(1.2);
-	transition-duration: 0.6s;
-} */
-
-.chiffre {
-	background-color: #fff;
-	border-radius: 100%;
-	border: solid 1px #000;
-	height: 3rem;
-	width: 3rem;
-	min-height: 3.5rem;
-	min-width: 3.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: -2px;
-}
