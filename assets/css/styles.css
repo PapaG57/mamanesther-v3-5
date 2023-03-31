@@ -126,6 +126,7 @@ nav ul li a:hover {
 /***** CAROUSSEL *****/
 .caroussel {
     width: 50%;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 .carousel-control-next {
@@ -152,7 +153,8 @@ nav ul li a:hover {
     width: 50%;
 	background-color: #fff;
     padding: 8px;
-    border-radius: 5px
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 .img-debre {
@@ -211,6 +213,7 @@ nav ul li a:hover {
 .content-card {
     width: 480px;
     height: 600px;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 /***** IMAGES CARTES NEWS *****/
@@ -312,6 +315,7 @@ nav ul li a:hover {
 	margin-top: 80px;
 	margin-bottom: 40px;
 	text-align: center;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 .text-temoignages h4 {
@@ -629,12 +633,41 @@ a:focus {
 .all-card-chiffres {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	margin-top: 100px;
+}
+
+.all-card-line-1, .all-card-line-2 {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 40px;
 }
 
 .card-chiffres {
-	width: 600px;
-	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 80px;
 	background-color: #fff;
-	margin-top: 80px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.vertical-line {
+	border-left: 2px solid #0ebcf1;
+	display: inline-block;
+	height: 70px;
+	margin: 0 20px;
+}
+
+.card-chiffres-text {
+	padding-left: 50px;
+	font-size: 1.2rem;
+}
+
+.card-chiffres-chiffres {
+	padding-left: 10px;
+	font-size: 1.2rem;
+	color: #0ebcf1;
 }
