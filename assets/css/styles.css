@@ -6,7 +6,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato);
 @import url(http://fonts.googleapis.com/css?family=Allerta+Stencil);
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap);
 
 body {
 	margin: 0;
@@ -710,7 +709,6 @@ a {
 	min-height: 100px;
 	padding: 20px 50px;
 	margin-top: 100px;
-	font-family: "Poppins", sans-serif;
 }
 
 .space-footer-1,
@@ -720,6 +718,25 @@ a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.space-footer-1 {
+	gap: 30px;
+}
+
+.coordonnees {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.align-coordonnees {
+	display: flex;
+	flex-direction: column;
+}
+
+.fa.fa-envelope {
+	color: #fff;
 }
 
 .img-logo-footer {
@@ -739,12 +756,14 @@ a {
 }
 
 .fa.fa-facebook,
-.fa.fa-instagram {
-	color: #fff;
+.fa.fa-instagram,
+.fa.fa-linkedin {
+	color: #1815ce;
 }
 
 .fa.fa-facebook:hover,
-.fa.fa-instagram:hover {
+.fa.fa-instagram:hover,
+.fa.fa-linkedin:hover {
 	color: #0ebcf1;
 }
 
@@ -752,7 +771,6 @@ a {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	margin: 10px 0;
 	flex-wrap: wrap;
